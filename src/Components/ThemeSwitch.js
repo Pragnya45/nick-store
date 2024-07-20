@@ -14,7 +14,7 @@ export function ThemeSwitch() {
             toggleTheme("dark");
           }}
         >
-          <IoMdMoon color="#000" size={25} className=" " />
+          <IoMdMoon color="#00a3ff" size={25} className=" " />
         </button>
       ) : (
         <button
@@ -23,7 +23,7 @@ export function ThemeSwitch() {
           }}
           className="shadow-lg rounded-full p-2"
         >
-          <FiSun color="#fff" size={25} />
+          <FiSun color="#00a3ff" size={25} />
         </button>
       )}{" "}
     </div>

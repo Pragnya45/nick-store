@@ -7,16 +7,16 @@ export default function Layout() {
   const { theme } = useTheme();
 
   return (
-    <div className="w-full flex flex-col h-screen overflow-y-hidden">
+    <main className="flex flex-col">
       <Header />
       <div className="flex h-full grow">
         <div
-          className={`bg-color-${theme} min-h-screen overflow-y-auto w-full p-6 pb-24`}
+          className={`bg-color-${theme} min-h-screen overflow-y-auto w-full py-6 pb-24`}
         >
           <Outlet />
         </div>
       </div>
       <Footer />
-    </div>
+    </main>
   );
 }
