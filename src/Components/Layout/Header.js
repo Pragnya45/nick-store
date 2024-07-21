@@ -38,7 +38,10 @@ export default function Header({ setShowSidebar }) {
       }  fixed z-10 left-0 right-0 top-0`}
     >
       <div className="border-b border-[#CCCCCC] flex h-20 w-full items-center justify-between px-4 sm:px-12 text-white lg:gap-4  xl:gap-14">
-        <section className="flex items-center justify-center gap-3 ">
+        <Link
+          to="/"
+          className="flex cursor-pointer items-center justify-center gap-3 "
+        >
           {theme === "dark" ? (
             <img
               alt="logo"
@@ -52,7 +55,7 @@ export default function Header({ setShowSidebar }) {
               className="w-[6rem] sm:w-[8rem] h-[4rem]"
             />
           )}
-        </section>
+        </Link>
         <div
           className={`w-fit hidden sm:flex gap-4 items-center font-semibold text-[16px] text-color-${theme} gap-7  tracking-wide`}
         >

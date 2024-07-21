@@ -17,9 +17,6 @@ export default function ShopDetails() {
   const [selectedsize, setSelectedsize] = useState("6");
   const [showPopup, setShowpopup] = useState(false);
 
-  console.log(id);
-  console.log(shoes.find((shoe) => shoe.id === id));
-
   useEffect(() => {
     const foundShoe = shoes.find((shoe) => shoe.id === id);
     setShoeData(foundShoe);

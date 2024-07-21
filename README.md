@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Nike Shoe Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Nike Shoe Store! This project is a sleek and modern e-commerce platform built with React and Tailwind CSS. It offers both dark and light themes, which users can switch between manually. Below is an overview of the features and pages included in this project.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dark and Light Themes**: Users can toggle between dark and light themes for a personalized browsing experience.
+- **Responsive Design**: Fully responsive design ensures seamless usability on both desktop and mobile devices.
+- **Interactive Banner**: The home page features an engaging banner highlighting the latest product with a video that can be muted and unmuted.
+- **Swiper Slider**: The shop section includes a Swiper slider for easy browsing of products, with a "View More" button leading to the detailed shop page.
+- **Product Details**: Comprehensive product information on the shop details page, including pricing, description, features, and options to select size and color.
+- **Add to Cart Modal**: A modal popup displays product details and pricing when a product is added to the cart.
+- **Testimonial Section**: Displays user reviews to build credibility and engagement.
+- **Footer**: Contains navigation links to all sections and social media links for Nike Store.
+- **Contact Us Page**: Allows users to fill out a form to contact the store for inquiries or support.
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Banner Section**: Features a product image and a video with content. Users can mute and unmute the video.
+- **Testimonial Section**: Displays reviews from satisfied customers.
 
-### `npm test`
+### Shop
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Product Slider**: Includes a Swiper slider for browsing products.
+- **View More Button**: Redirects to the shop page with a comprehensive list of all products.
 
-### `npm run build`
+### Shop Details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Product Information**: Displays details like pricing, description, and features.
+- **Size and Color Selection**: Users can select their preferred size and color.
+- **Add to Cart**: Clicking the "Add to Cart" button opens a modal popup showing product details and pricing.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Contact Us
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Contact Form**: Allows users to fill out a form to get in touch with the store for any inquiries or support.
