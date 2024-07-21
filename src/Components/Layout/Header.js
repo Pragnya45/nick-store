@@ -10,6 +10,7 @@ import { PiShoppingCartFill } from "react-icons/pi";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import menu from "../../assets/icons/menu.svg";
+import { IoMenu } from "react-icons/io5";
 
 export default function Header({ setShowSidebar }) {
   const { theme } = useSelector(uiState);
@@ -36,12 +37,20 @@ export default function Header({ setShowSidebar }) {
         showPageNav ? `bg-color-${theme}` : "bg-user-card"
       }  fixed z-10 left-0 right-0 top-0`}
     >
-      <div className="border-b border-[#CCCCCC] flex h-20 w-full items-center justify-between px-12 text-white lg:gap-4  xl:gap-14">
+      <div className="border-b border-[#CCCCCC] flex h-20 w-full items-center justify-between px-4 sm:px-12 text-white lg:gap-4  xl:gap-14">
         <section className="flex items-center justify-center gap-3 ">
           {theme === "dark" ? (
-            <img alt="logo" src={nikeWhite} className="w-[8rem] h-[3rem]" />
+            <img
+              alt="logo"
+              src={nikeWhite}
+              className="w-[6rem] sm:w-[8rem] h-[3rem]"
+            />
           ) : (
-            <img alt="logo" src={nikeBlack} className="w-[8rem] h-[4rem]" />
+            <img
+              alt="logo"
+              src={nikeBlack}
+              className="w-[6rem] sm:w-[8rem] h-[4rem]"
+            />
           )}
         </section>
         <div
@@ -86,8 +95,8 @@ export default function Header({ setShowSidebar }) {
             Contact us
           </Link>
         </div>
-        <div className="hidden sm:flex items-center gap-4">
-          <div className="flex w-[200px] h-[30px] bg-[#EAE6E65E] items-center gap-1 px-3 rounded-full">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <div className="hidden sm:flex w-[200px] h-[30px] bg-[#EAE6E65E] items-center gap-1 px-3 rounded-full">
             <input
               type="text"
               placeholder="Search Products"
@@ -95,18 +104,21 @@ export default function Header({ setShowSidebar }) {
             />
             <IoSearch size={20} color={theme === "dark" ? "white" : "black"} />
           </div>
-          <PiShoppingCartFill
-            size={20}
-            color={theme === "dark" ? "white" : "black"}
-          />
+          <div className="hidden sm:block">
+            <PiShoppingCartFill
+              size={20}
+              color={theme === "dark" ? "white" : "black"}
+            />
+          </div>
+          <button
+            className="cursor-pointer w-8 h-8 block sm:hidden"
+            onClick={() => setShowSidebar(true)}
+          >
+            {/* <img alt="menu" src={menu} width={40} height={40} /> */}
+            <IoMenu size={28} color="#00a3ff" />
+          </button>
+          <ThemeSwitch />
         </div>
-        <button
-          className="cursor-pointer w-8 h-8 block sm:hidden"
-          onClick={() => setShowSidebar(true)}
-        >
-          <img alt="menu" src={menu} width={40} height={40} />
-        </button>
-        <ThemeSwitch />
       </div>
     </nav>
   );

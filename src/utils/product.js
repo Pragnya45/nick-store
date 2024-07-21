@@ -8,23 +8,44 @@ import nikePagasusvd from "../assets/videos/Nike Air Max 97 - Evolution (Animati
 import nikeflyVd from "../assets/videos/Nike Air Max 270 - Animation.mp4";
 import nikezoomvd from "../assets/videos/Nike Commercial AirMax - 3D Animation (Element 3D).mp4";
 import nikevaprovd from "../assets/videos/Nike Lava x Kront (Design inspired by DerekElliott).mp4";
+import nikeAirmaxblack from "../assets/images/nike-air-max-black.jpg";
+import nikeAirmaxwhite from "../assets/images/nike-air-max-white.jpg";
+import nikeAirmaxvolt from "../assets/images/nike-air-max-volt.png";
+import nikeAirpegasusblue from "../assets/images/nike-air-zoom-pegasus-blue.png";
+import nikeAirpegasuspink from "../assets/images/nike-air-pegasus-pink.webp";
+import nikeinfinityblackwhite from "../assets/images/nike-infinity-fly-black-white.png";
+import nikeinfinitypink from "../assets/images/nike-react-infinity-fly-pink.jpg";
+import nikelimelightVolt from "../assets/images/limelight-volt.png";
+import vapromax from "../assets/images/vapromax-black.png";
+import nikeuniverseRed from "../assets/images/nike-red.jpg";
+import nikeuniverseblackwhite from "../assets/images/nike-air-max-universe-black-white.webp";
+import nikefreernblack from "../assets/images/nike-free-rn-black.webp";
+import nikefreernwhite from "../assets/images/nike-free-rn-white.jpg";
+import nikeairforcewhite from "../assets/images/nike-air-force.jpg";
+import nikeairforceblack from "../assets/images/uqNjJ7.jpg";
+import nikehuaracheblackwhite from "../assets/images/nike-huarache-trainer-shoe-white.jpg";
+import nikehuarachered from "../assets/images/s-l1600.jpg";
+import nikejoyrideblack from "../assets/images/Nike-Joyride-Run-Flyknit-Black-White-AQ2730-001-Release-Date-4.jpg";
+import nikejoyridecrimson from "../assets/images/s-l1200.jpg";
+
 const shoes = [
   {
+    id: "1",
     name: "Nike Air Max Infinity",
     model: "AM-INF24",
     price: 180,
     colorways: [
       {
         name: "Black",
-        image: "images/air-max-infinity-black.jpg",
+        image: nikeAirmaxblack,
       },
       {
         name: "White",
-        image: "images/air-max-infinity-white.jpg",
+        image: nikeAirmaxwhite,
       },
       {
         name: "Volt",
-        image: "images/air-max-infinity-volt.jpg",
+        image: nikeAirmaxvolt,
       },
     ],
     description:
@@ -64,17 +85,18 @@ const shoes = [
     totalReviews: 320,
   },
   {
+    id: "2",
     name: "Nike Zoom Pegasus 39",
     model: "ZP39-2024",
     price: 120,
     colorways: [
       {
         name: "Blue",
-        image: "images/zoom-pegasus-39-blue.jpg",
+        image: nikeAirpegasusblue,
       },
       {
         name: "Pink",
-        image: "images/zoom-pegasus-39-pink.jpg",
+        image: nikeAirpegasuspink,
       },
     ],
     description:
@@ -113,17 +135,18 @@ const shoes = [
     totalReviews: 210,
   },
   {
+    id: "3",
     name: "Nike React Infinity Run Flyknit 3",
     model: "RIRFK3-2024",
     price: 160,
     colorways: [
       {
         name: "Black/White",
-        image: "images/react-infinity-run-flyknit-3-black-white.jpg",
+        image: nikeinfinityblackwhite,
       },
       {
         name: "Platinum/Pink",
-        image: "images/react-infinity-run-flyknit-3-platinum-pink.jpg",
+        image: nikeinfinitypink,
       },
     ],
     description:
@@ -160,13 +183,14 @@ const shoes = [
     totalReviews: 290,
   },
   {
+    id: "4",
     name: "Nike Air Zoom Alphafly NEXT% 2",
     model: "AZAN2-2024",
     price: 275,
     colorways: [
       {
         name: "Limelight/Volt",
-        image: "images/alphafly-next-2-limelight-volt.jpg",
+        image: nikelimelightVolt,
       },
     ],
     description:
@@ -216,13 +240,14 @@ const shoes = [
     totalReviews: 150,
   },
   {
+    id: "5",
     name: "Nike Air Vapormax 2023 Flyknit",
     model: "AV23FK-2024",
     price: 210,
     colorways: [
       {
         name: "Triple Black",
-        image: "images/vapormax-2023-flyknit-triple-black.jpg",
+        image: vapromax,
       },
     ],
     description:
@@ -261,17 +286,18 @@ const shoes = [
     totalReviews: 180,
   },
   {
+    id: "6",
     name: "Nike Air Max 270",
     model: "AM270-2024",
     price: 150,
     colorways: [
       {
         name: "University Red",
-        image: "images/air-max-270-university-red.jpg",
+        image: nikeuniverseRed,
       },
       {
         name: "Black/White",
-        image: "images/air-max-270-black-white.jpg",
+        image: nikeuniverseblackwhite,
       },
     ],
     description:
@@ -307,17 +333,18 @@ const shoes = [
     totalReviews: 200,
   },
   {
+    id: "7",
     name: "Nike Free RN 5.0",
     model: "FRN5-2024",
     price: 100,
     colorways: [
       {
         name: "Black",
-        image: "images/free-rn-5-black.jpg",
+        image: nikefreernblack,
       },
       {
         name: "White",
-        image: "images/free-rn-5-white.jpg",
+        image: nikefreernwhite,
       },
     ],
     description:
@@ -353,17 +380,18 @@ const shoes = [
     totalReviews: 150,
   },
   {
+    id: "8",
     name: "Nike Air Force 1 '07",
     model: "AF1-07-2024",
     price: 90,
     colorways: [
       {
         name: "White",
-        image: "images/air-force-1-07-white.jpg",
+        image: nikeairforcewhite,
       },
       {
         name: "Black",
-        image: "images/air-force-1-07-black.jpg",
+        image: nikeairforceblack,
       },
     ],
     description:
@@ -398,17 +426,18 @@ const shoes = [
     totalReviews: 400,
   },
   {
+    id: "9",
     name: "Nike Air Huarache",
     model: "AH-2024",
     price: 110,
     colorways: [
       {
         name: "Black/White",
-        image: "images/air-huarache-black-white.jpg",
+        image: nikehuaracheblackwhite,
       },
       {
         name: "University Red",
-        image: "images/air-huarache-university-red.jpg",
+        image: nikehuarachered,
       },
     ],
     description:
@@ -443,17 +472,18 @@ const shoes = [
     totalReviews: 250,
   },
   {
+    id: "10",
     name: "Nike Joyride Run Flyknit",
     model: "JRFK-2024",
     price: 180,
     colorways: [
       {
         name: "Bright Crimson",
-        image: "images/joyride-run-flyknit-bright-crimson.jpg",
+        image: nikejoyridecrimson,
       },
       {
         name: "Black/White",
-        image: "images/joyride-run-flyknit-black-white.jpg",
+        image: nikejoyrideblack,
       },
     ],
     description:
@@ -486,366 +516,6 @@ const shoes = [
     bannerImage: "images/joyride-run-flyknit-banner.jpg",
     rating: 4.6,
     totalReviews: 220,
-  },
-  {
-    name: "Nike Air Max 90",
-    model: "AM90-2024",
-    price: 140,
-    colorways: [
-      {
-        name: "Infrared",
-        image: "images/air-max-90-infrared.jpg",
-      },
-      {
-        name: "White/Black",
-        image: "images/air-max-90-white-black.jpg",
-      },
-    ],
-    description:
-      "The Nike Air Max 90 is a classic sneaker that combines style and comfort with its iconic design and visible Air cushioning. The leather and synthetic upper provides durability and support, while the foam midsole with Max Air unit in the heel offers lightweight cushioning and impact protection. Perfect for everyday wear, the Air Max 90 is a timeless choice for sneaker enthusiasts.",
-    features: [
-      {
-        name: "Max Air Unit",
-        description:
-          "Visible Air cushioning for superior comfort and impact protection.",
-      },
-      {
-        name: "Leather and Synthetic Upper",
-        description: "Provides durability and support.",
-      },
-      {
-        name: "Foam Midsole",
-        description: "Offers lightweight cushioning and impact protection.",
-      },
-    ],
-    technology: [
-      {
-        name: "Max Air",
-        description:
-          "Nike's iconic Air cushioning technology for superior comfort and impact protection.",
-      },
-      {
-        name: "Foam Midsole",
-        description: "Provides lightweight cushioning and support.",
-      },
-    ],
-    bannerImage: "images/air-max-90-banner.jpg",
-    rating: 4.5,
-    totalReviews: 280,
-  },
-  {
-    name: "Nike Blazer Mid '77",
-    model: "BM77-2024",
-    price: 100,
-    colorways: [
-      {
-        name: "White/Black",
-        image: "images/blazer-mid-77-white-black.jpg",
-      },
-      {
-        name: "Habanero Red",
-        image: "images/blazer-mid-77-habanero-red.jpg",
-      },
-    ],
-    description:
-      "The Nike Blazer Mid '77 combines vintage style with modern comfort. The leather and synthetic upper offers durability and a premium look, while the mid-top design provides ankle support. With its retro design and comfortable fit, the Blazer Mid '77 is perfect for those who appreciate classic style.",
-    features: [
-      {
-        name: "Leather and Synthetic Upper",
-        description: "Provides durability and a premium look.",
-      },
-      {
-        name: "Mid-Top Design",
-        description: "Offers ankle support and a retro look.",
-      },
-      {
-        name: "Rubber Outsole",
-        description: "Provides traction and durability.",
-      },
-    ],
-    technology: [
-      {
-        name: "Rubber Outsole",
-        description: "Durable rubber for traction and support.",
-      },
-      {
-        name: "Leather Upper",
-        description: "Premium materials for durability and style.",
-      },
-    ],
-    bannerImage: "images/blazer-mid-77-banner.jpg",
-    rating: 4.7,
-    totalReviews: 340,
-  },
-  {
-    name: "Nike Air Max 2090",
-    model: "AM2090-2024",
-    price: 150,
-    colorways: [
-      {
-        name: "Wolf Grey",
-        image: "images/air-max-2090-wolf-grey.jpg",
-      },
-      {
-        name: "Black/White",
-        image: "images/air-max-2090-black-white.jpg",
-      },
-    ],
-    description:
-      "The Nike Air Max 2090 brings a futuristic twist to the iconic Air Max design. Featuring a large Air unit for exceptional cushioning, a lightweight and breathable upper, and bold design details, the Air Max 2090 offers a modern look and comfortable fit. Perfect for those who want to make a statement, the Air Max 2090 combines style and performance.",
-    features: [
-      {
-        name: "Large Air Unit",
-        description: "Provides exceptional cushioning and impact protection.",
-      },
-      {
-        name: "Lightweight Upper",
-        description: "Offers breathability and comfort.",
-      },
-      {
-        name: "Bold Design Details",
-        description: "Modern design for a futuristic look.",
-      },
-    ],
-    technology: [
-      {
-        name: "Max Air",
-        description:
-          "Nike's iconic Air cushioning technology for superior comfort and impact protection.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Lightweight and breathable materials for comfort.",
-      },
-    ],
-    bannerImage: "images/air-max-2090-banner.jpg",
-    rating: 4.2,
-    totalReviews: 180,
-  },
-  {
-    name: "Nike Air Presto",
-    model: "AP-2024",
-    price: 130,
-    colorways: [
-      {
-        name: "White",
-        image: "images/air-presto-white.jpg",
-      },
-      {
-        name: "Black",
-        image: "images/air-presto-black.jpg",
-      },
-    ],
-    description:
-      "The Nike Air Presto offers a comfortable and snug fit with its stretchy mesh upper and lightweight construction. The midfoot cage provides support and stability, while the foam midsole with Air cushioning ensures a smooth and comfortable ride. Perfect for everyday wear, the Air Presto combines style and comfort for a versatile shoe.",
-    features: [
-      {
-        name: "Stretchy Mesh Upper",
-        description: "Provides a comfortable and snug fit.",
-      },
-      {
-        name: "Midfoot Cage",
-        description: "Offers support and stability.",
-      },
-      {
-        name: "Foam Midsole",
-        description: "Ensures a smooth and comfortable ride.",
-      },
-    ],
-    technology: [
-      {
-        name: "Air Cushioning",
-        description:
-          "Nike's Air technology for comfortable cushioning and support.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Lightweight and breathable materials for comfort.",
-      },
-    ],
-    bannerImage: "images/air-presto-banner.jpg",
-    rating: 4.4,
-    totalReviews: 230,
-  },
-  {
-    name: "Nike Air Max 720",
-    model: "AM720-2024",
-    price: 200,
-    colorways: [
-      {
-        name: "Black",
-        image: "images/air-max-720-black.jpg",
-      },
-      {
-        name: "Aurora Borealis",
-        image: "images/air-max-720-aurora-borealis.jpg",
-      },
-    ],
-    description:
-      "The Nike Air Max 720 features the largest Air unit in Nike history, providing unparalleled cushioning and support. The futuristic design, lightweight materials, and comfortable fit make the Air Max 720 a standout choice for those looking to make a statement. Perfect for all-day wear, the Air Max 720 offers a bold look and exceptional comfort.",
-    features: [
-      {
-        name: "Largest Air Unit",
-        description: "Provides unparalleled cushioning and support.",
-      },
-      {
-        name: "Futuristic Design",
-        description: "Bold and modern look for those who want to stand out.",
-      },
-      {
-        name: "Lightweight Materials",
-        description: "Ensures a comfortable fit for all-day wear.",
-      },
-    ],
-    technology: [
-      {
-        name: "Max Air",
-        description:
-          "Nike's largest Air unit for exceptional cushioning and support.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Lightweight and breathable materials for comfort.",
-      },
-    ],
-    bannerImage: "images/air-max-720-banner.jpg",
-    rating: 4.3,
-    totalReviews: 210,
-  },
-  {
-    name: "Nike React Vision",
-    model: "RV-2024",
-    price: 140,
-    colorways: [
-      {
-        name: "Summit White",
-        image: "images/react-vision-summit-white.jpg",
-      },
-      {
-        name: "Photon Dust",
-        image: "images/react-vision-photon-dust.jpg",
-      },
-    ],
-    description:
-      "The Nike React Vision combines surreal comfort with futuristic design. The React foam midsole provides a smooth and responsive ride, while the layered textures and bold design details offer a unique and modern look. Perfect for those who want to make a statement, the React Vision delivers both style and performance.",
-    features: [
-      {
-        name: "React Foam Midsole",
-        description: "Offers a smooth and responsive ride.",
-      },
-      {
-        name: "Layered Textures",
-        description: "Provides a unique and modern look.",
-      },
-      {
-        name: "Bold Design Details",
-        description: "Futuristic design for those who want to stand out.",
-      },
-    ],
-    technology: [
-      {
-        name: "React Foam",
-        description:
-          "Nike's innovative foam technology for a smooth and responsive ride.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Lightweight and breathable materials for comfort.",
-      },
-    ],
-    bannerImage: "images/react-vision-banner.jpg",
-    rating: 4.5,
-    totalReviews: 240,
-  },
-  {
-    name: "Nike Zoom Winflo 7",
-    model: "ZW7-2024",
-    price: 90,
-    colorways: [
-      {
-        name: "Blue Void",
-        image: "images/zoom-winflo-7-blue-void.jpg",
-      },
-      {
-        name: "Black/White",
-        image: "images/zoom-winflo-7-black-white.jpg",
-      },
-    ],
-    description:
-      "The Nike Zoom Winflo 7 offers a responsive ride with its Zoom Air units in the forefoot and heel. The breathable mesh upper keeps your feet cool and comfortable, while the cushioned midsole provides support and impact protection. Perfect for runners looking for a reliable and comfortable shoe, the Zoom Winflo 7 delivers both style and performance.",
-    features: [
-      {
-        name: "Zoom Air Units",
-        description: "Provides responsive cushioning and energy return.",
-      },
-      {
-        name: "Breathable Mesh Upper",
-        description: "Keeps your feet cool and comfortable.",
-      },
-      {
-        name: "Cushioned Midsole",
-        description: "Offers support and impact protection.",
-      },
-    ],
-    technology: [
-      {
-        name: "Zoom Air",
-        description:
-          "Responsive cushioning technology for a snappy and energetic feel.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Lightweight and breathable materials for comfort.",
-      },
-    ],
-    bannerImage: "images/zoom-winflo-7-banner.jpg",
-    rating: 4.4,
-    totalReviews: 190,
-  },
-  {
-    name: "Nike Air Max Plus",
-    model: "AMP-2024",
-    price: 160,
-    colorways: [
-      {
-        name: "Sunset",
-        image: "images/air-max-plus-sunset.jpg",
-      },
-      {
-        name: "Black/White",
-        image: "images/air-max-plus-black-white.jpg",
-      },
-    ],
-    description:
-      "The Nike Air Max Plus features a unique design with Tuned Air technology for maximum cushioning and support. The mesh upper provides breathability, while the rubber outsole offers traction and durability. Perfect for those who want a stylish and comfortable shoe, the Air Max Plus delivers a bold look and exceptional comfort.",
-    features: [
-      {
-        name: "Tuned Air Technology",
-        description: "Provides maximum cushioning and support.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Ensures breathability and comfort.",
-      },
-      {
-        name: "Rubber Outsole",
-        description: "Offers traction and durability.",
-      },
-    ],
-    technology: [
-      {
-        name: "Tuned Air",
-        description:
-          "Nike's advanced Air technology for maximum cushioning and support.",
-      },
-      {
-        name: "Mesh Upper",
-        description: "Lightweight and breathable materials for comfort.",
-      },
-    ],
-    bannerImage: "images/air-max-plus-banner.jpg",
-    rating: 4.6,
-    totalReviews: 260,
   },
 ];
 

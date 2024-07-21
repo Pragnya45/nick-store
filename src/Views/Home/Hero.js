@@ -68,7 +68,7 @@ function Hero() {
   console.log(shoes[currentVideoIndex]?.bannerImage);
   console.log(showvideo);
   return (
-    <div className="h-[90vh] w-full flex items-end relative">
+    <div className="h-[60vh] sm:h-[90vh] w-full flex items-end relative">
       <img
         src={shoes[currentVideoIndex]?.bannerImage}
         showvideo={showvideo}
@@ -90,27 +90,27 @@ function Hero() {
         muted={muted}
         className={`${
           showvideo ? "block" : "hidden"
-        } h-full w-full object-cover`}
+        } h-full w-full  object-cover`}
       />
 
       <div className="flex justify-between absolute w-full px-[2rem] py-[3rem]">
-        <div className="w-[45%] gap-4 text-white relative flex flex-col items-start">
-          <p className="text-[35px] font-bold bg-section-heading bg-clip-text text-transparent">
+        <div className="w-[70%] sm:w-[45%] gap-1 sm:gap-4 text-white relative flex flex-col items-start">
+          <p className="text-[20px] sm:text-[35px] font-bold bg-section-heading bg-clip-text text-transparent">
             {shoes[currentVideoIndex]?.name}
           </p>
-          <p className="text-[25px] font-semibold">
+          <p className="text-[18px] sm:text-[25px] font-semibold">
             {shoes[currentVideoIndex]?.model}
           </p>
 
-          <p className="text-[15px] font-medium">
+          <p className="text-[15px] line-clamp-2 sm:line-clamp-none font-medium">
             {shoes[currentVideoIndex]?.description}
           </p>
 
-          <button className="w-[10rem] bg-[#00a3ff] rounded-md text-[16px] font-semibold text-white px-8 py-4">
+          <button className="w-[5rem] sm:w-[10rem] bg-[#00a3ff] flex text-center justify-center item-center rounded-md text-[14px] sm:text-[16px] font-semibold text-white px-2 sm:px-8 py-1 sm:py-4">
             Shop Now
           </button>
         </div>
-        <div className="flex flex-col w-[30%] mt-auto gap-8">
+        <div className="flex flex-col w-[10%] sm:w-[30%] mt-auto gap-8">
           <div className="ml-auto flex w-full items-end">
             {muted ? (
               <Tooltip title="Unmute">
@@ -130,7 +130,7 @@ function Hero() {
               </Tooltip>
             )}
           </div>
-          <div className="flex h-[5rem] w-full">
+          <div className="hidden sm:flex h-[5rem] w-full">
             <Swiper
               centeredSlides={false}
               slidesPerView={"auto"}

@@ -11,9 +11,12 @@ import { shoes } from "../../utils/product";
 import { useSelector } from "react-redux";
 import { uiState } from "../../Redux/uiSlice";
 import "./home.css";
+import { ProductCard } from "../../Components/ProductCard";
+import { useNavigate } from "react-router-dom";
 
 function Shop() {
   const { theme } = useSelector(uiState);
+  const navigate = useNavigate();
 
   return (
     <div className="flex flex-col items-center py-8 px-[4%] mt-8 relative h-fit post_swiper_container overflow-hidden w-full gap-2">
@@ -29,7 +32,7 @@ function Shop() {
           slidesPerView="auto"
           slidesPerGroup={2}
           loop={false}
-          spaceBetween={20}
+          spaceBetween={35}
           onSwiper={(swiper) => console.log(swiper)}
           navigation={{
             nextEl: "#button-next-collection",
@@ -44,7 +47,7 @@ function Shop() {
           ))}
         </Swiper>
       </div>
-      <div className="slider-controller h-20 relative flex items-center gap-4">
+      <div className="slider-controller h-20 relative w-full mx-auto flex justify-center  items-center gap-4">
         <button
           className="cursor-pointer swiper-button-prev"
           id="button-prev-collection"
@@ -70,31 +73,13 @@ function Shop() {
           />
         </button>
       </div>
-      <button className="w-[10rem] bg-[#00a3ff] rounded-md text-[16px] font-semibold text-white px-8 py-4">
+      <button
+        onClick={() => navigate("/shop")}
+        className="w-[10rem] bg-[#00a3ff] rounded-md text-[16px] font-semibold text-white px-8 py-4"
+      >
         View More
       </button>
     </div>
   );
 }
 export default Shop;
-export function ProductCard({ people }) {
-  return (
-    <div className="flex flex-col gap-2 max-w-[14rem] w-full">
-      <img
-        src={people?.image}
-        width={400}
-        height={400}
-        className="w-full h-[18rem]"
-      />
-      <p className="font-inter text-[#101828] font-semibold text-[16px]">
-        {people?.name}
-      </p>
-      <p className="font-inter text-[#EC8000] font-normal text-[14px]">
-        {people?.position}
-      </p>
-      <p className="font-inter text-[#475467] font-normal text-[13px]">
-        {people?.description}
-      </p>
-    </div>
-  );
-}

@@ -56,7 +56,10 @@
   }
 
   .swiper-slide {
-    width: 14rem !important;
+    width: 18rem !important;
+    @media (max-width: 600px) {
+      width: 15rem !important;
+    }
   }
 
   .swiper-slide-shadow-left,

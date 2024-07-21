@@ -98,12 +98,12 @@ function Testimonial() {
         Testimonial
       </p>
       {/* <div className="relative  mx-auto mt-8 flex max-w-screen-lg flex-wrap justify-center gap-7 px-4"> */}
-      <div className="flex flex-col mt-8 max-w-screen-lg mx-auto w-full gap-8px">
+      <div className="flex flex-col  mt-8 max-w-screen-lg mx-auto w-full gap-8">
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="16px">
             {reviews?.map((messages, index) => (
               <div
-                className="w-full max-w-[312px] bg-user-card2 h-fit rounded-2xl border border-[#7184FD]  px-[2.5rem] py-16 backdrop-blur transition-all duration-200 hover:scale-105"
+                className="w-full max-w-[312px]  grow bg-user-card2  rounded-2xl border border-[#7184FD]  px-[2.5rem] py-16 backdrop-blur transition-all duration-200 hover:scale-105"
                 key={index}
                 data-aos="zoom-in-up"
               >

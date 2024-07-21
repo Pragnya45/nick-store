@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        "btn-gradient":
+          "linear-gradient(266.04deg, #7184FD 20%, #3F7AF0 50%, #4F37EE 100%)",
         "section-heading":
           "linear-gradient(90deg, #7581f5 -5.34%, #c4c9f7 105.27%)",
         "heading-color-dark":
@@ -14,6 +16,12 @@ module.exports = {
           "linear-gradient(110.16deg, rgba(45, 131, 238, 0.13) -21.91%, rgba(255, 255, 255, 0) 48.11%, rgba(45, 131, 238, 0.23) 118.14%)",
         "user-card2":
           "linear-gradient(110.16deg, rgba(248, 251, 255, 0.21) 4.4%, rgba(252, 253, 255, 0.0541482) 19.94%, rgba(12, 12, 12, 0.025258) 38.31%, rgba(255, 255, 255, 0) 54.36%, rgba(255, 255, 255, 0.19) 83.82%)",
+        "gradient-cardBg":
+          "linear-gradient(59.26deg, #FFFFFF -22.9%, rgba(5, 0, 73, 0) 16.78%, #0C0B19 16.2%, rgba(4, 0, 57, 0) 48.95%, rgba(255, 255, 255, 0.6) 86.91%)",
+      },
+      boxShadow: {
+        "shadow-1":
+          "0px -2px 15px 1px #407BFF, 0px 3.2px 20px 0px rgba(0, 0, 0, 0.4)",
       },
       backgroundColor: {
         "color-dark": "#0A0917",
