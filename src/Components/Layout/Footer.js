@@ -50,7 +50,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="flex h-[70vh] w-full flex-col items-center bg-user-card bg-cover bg-center  py-6 text-white"
+      className="flex h-auto sm:h-[70vh] w-full flex-col items-center bg-user-card bg-cover bg-center  py-6 text-white"
       style={{ backgroundImage: theme === "dark" ? `url(${footerBg})` : null }}
     >
       <div className="flex flex-col sm:flex-row my-6 w-full pb-8 sm:pb-[4rem]  px-12 pt-6 gap-10  justify-between">

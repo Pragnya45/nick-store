@@ -8,12 +8,22 @@ import left from "../../assets/icons/arrow-left.svg";
 import right from "../../assets/icons/arrow-right.svg";
 import { Link } from "react-router-dom";
 import { shoes } from "../../utils/product";
+import { useSelector } from "react-redux";
+import { uiState } from "../../Redux/uiSlice";
 import "./home.css";
 
 function Shop() {
+  const { theme } = useSelector(uiState);
+
   return (
-    <div className="flex flex-col mt-8 relative h-fit post_swiper_container overflow-hidden w-full gap-2">
-      <div className="flex w-full">
+    <div className="flex flex-col items-center py-8 px-[4%] mt-8 relative h-fit post_swiper_container overflow-hidden w-full gap-2">
+      <p
+        className={`text-color-${theme} text-center text-[30px] font-bold`}
+        data-aos="fade-right"
+      >
+        Collection
+      </p>
+      <div className="flex w-full mt-4">
         <Swiper
           centeredSlides={false}
           slidesPerView="auto"
@@ -60,6 +70,9 @@ function Shop() {
           />
         </button>
       </div>
+      <button className="w-[10rem] bg-[#00a3ff] rounded-md text-[16px] font-semibold text-white px-8 py-4">
+        View More
+      </button>
     </div>
   );
 }

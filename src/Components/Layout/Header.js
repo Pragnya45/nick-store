@@ -9,8 +9,9 @@ import { IoSearch } from "react-icons/io5";
 import { PiShoppingCartFill } from "react-icons/pi";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import menu from "../../assets/icons/menu.svg";
 
-export default function Header() {
+export default function Header({ setShowSidebar }) {
   const { theme } = useSelector(uiState);
   const location = useLocation();
   const [showPageNav, setShowPageNav] = useState(false);
@@ -44,7 +45,7 @@ export default function Header() {
           )}
         </section>
         <div
-          className={`w-fit flex gap-4 items-center font-semibold text-[16px] text-color-${theme} gap-7  tracking-wide`}
+          className={`w-fit hidden sm:flex gap-4 items-center font-semibold text-[16px] text-color-${theme} gap-7  tracking-wide`}
         >
           <Link
             className={`${
@@ -85,7 +86,7 @@ export default function Header() {
             Contact us
           </Link>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="hidden sm:flex items-center gap-4">
           <div className="flex w-[200px] h-[30px] bg-[#EAE6E65E] items-center gap-1 px-3 rounded-full">
             <input
               type="text"
@@ -98,8 +99,14 @@ export default function Header() {
             size={20}
             color={theme === "dark" ? "white" : "black"}
           />
-          <ThemeSwitch />
         </div>
+        <button
+          className="cursor-pointer w-8 h-8 block sm:hidden"
+          onClick={() => setShowSidebar(true)}
+        >
+          <img alt="menu" src={menu} width={40} height={40} />
+        </button>
+        <ThemeSwitch />
       </div>
     </nav>
   );
