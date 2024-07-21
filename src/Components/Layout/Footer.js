@@ -51,7 +51,9 @@ export default function Footer() {
   return (
     <footer
       className="flex h-auto sm:h-[70vh] w-full flex-col items-center bg-user-card bg-cover bg-center  py-6 text-white"
-      style={{ backgroundImage: theme === "dark" ? `url(${footerBg})` : null }}
+      style={{
+        backgroundImage: theme === "dark" ? `url(${footerBg})` : null,
+      }}
     >
       <div className="flex flex-col sm:flex-row my-6 w-full pb-8 sm:pb-[4rem]  px-12 pt-6 gap-10  justify-between">
         <div className="flex flex-col gap-6 items-start">
@@ -65,7 +67,7 @@ export default function Footer() {
           {Footerdata?.map((option, index) => (
             <div className="flex sm:items-start gap-3 flex-col" key={index}>
               <p
-                className={`text-section-${theme} uppercase font-poppins font-semibold text-[16px] sm:text-[18px]`}
+                className={`text-section-${theme} uppercase  font-semibold text-[16px] sm:text-[18px]`}
               >
                 {option?.title}
               </p>
@@ -87,12 +89,12 @@ export default function Footer() {
         <div className="flex flex-col gap-8 items-start sm:items-end">
           <div className="flex items-start  flex-col">
             <p
-              className={`text-section-${theme} uppercase font-poppins  sm:text-left font-semibold text-[18px]`}
+              className={`text-section-${theme} uppercase   sm:text-left font-semibold text-[18px]`}
             >
               Contact Us
             </p>
             <p
-              className={`text-color-${theme} mt-4 font-poppins sm:text-left font-normal text-[16px]`}
+              className={`text-color-${theme} mt-4  sm:text-left font-normal text-[16px]`}
             >
               Nike@plus.com
               <br />
@@ -111,7 +113,7 @@ export default function Footer() {
         <div className="flex flex-col gap-8 items-start sm:items-end">
           <div className="flex items-start sm:items-end flex-col">
             <p
-              className={`text-section-${theme} uppercase font-poppins  sm:text-right font-semibold text-[18px]`}
+              className={`text-section-${theme} uppercase   sm:text-right font-semibold text-[18px]`}
             >
               Follow Us
             </p>

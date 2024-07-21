@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import review from "../../assets/images/verified.png";
 import { PrimaryButton } from "../../Components/Button";
+import Modal from "./Modal";
 
 export default function ShopDetails() {
   const { id } = useParams();
@@ -13,7 +14,8 @@ export default function ShopDetails() {
   const navigate = useNavigate();
   const [shoeData, setShoeData] = useState(null);
   const [selectedColorWay, setSelectedColorWay] = useState();
-  const [selectedsize, setSelectedsize] = useState();
+  const [selectedsize, setSelectedsize] = useState("6");
+  const [showPopup, setShowpopup] = useState(false);
 
   console.log(id);
   console.log(shoes.find((shoe) => shoe.id === id));
@@ -115,6 +117,7 @@ export default function ShopDetails() {
           <div className="flex flex-col gap-4 pt-5">
             <PrimaryButton
               title="Add to cart"
+              onClick={() => setShowpopup(true)}
               className="text-[14px] font-semibold uppercase"
             />
             <PrimaryButton
@@ -181,6 +184,14 @@ export default function ShopDetails() {
           ))}
         </ul>
       </div>
+      {showPopup && (
+        <Modal
+          content={shoeData}
+          selectedColorWay={selectedColorWay}
+          selectedsize={selectedsize}
+          setShowpopup={setShowpopup}
+        />
+      )}
     </div>
   );
 }

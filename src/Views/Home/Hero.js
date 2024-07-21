@@ -10,13 +10,14 @@ import { useState, useEffect, useRef } from "react";
 import { BiVolumeMute } from "react-icons/bi";
 import { GoUnmute } from "react-icons/go";
 import "./home.css";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const [showvideo, setShowvideo] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [muted, setMuted] = useState(true);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const contentRef = useRef();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const container = document.getElementById("Container");
@@ -106,7 +107,10 @@ function Hero() {
             {shoes[currentVideoIndex]?.description}
           </p>
 
-          <button className="w-[5rem] sm:w-[10rem] bg-[#00a3ff] flex text-center justify-center item-center rounded-md text-[14px] sm:text-[16px] font-semibold text-white px-2 sm:px-8 py-1 sm:py-4">
+          <button
+            onClick={() => navigate(`/shop/${shoes[currentVideoIndex]?.id}`)}
+            className="w-[5rem] sm:w-[10rem] bg-[#00a3ff] flex text-center justify-center item-center rounded-md text-[14px] sm:text-[16px] font-semibold text-white px-2 sm:px-8 py-1 sm:py-4"
+          >
             Shop Now
           </button>
         </div>
@@ -151,7 +155,7 @@ function Hero() {
                   <div
                     className={` ${
                       index === currentVideoIndex ? "border border-white" : ""
-                    } w-[98px] h-[60px] rounded-[6px] hover:scale-110`}
+                    } w-[98px] h-[60px] rounded-[6px] overflow-hidden`}
                     onClick={() => setCurrentVideoIndex(index)}
                   >
                     <img
