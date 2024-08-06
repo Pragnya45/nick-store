@@ -5,8 +5,14 @@ import ShopPage from "./Pages/Shop";
 import ContactUsPage from "./Pages/ContactUs";
 import FeaturesPage from "./Pages/Features";
 import ShopDetailsPage from "./Pages/ShopDetails";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

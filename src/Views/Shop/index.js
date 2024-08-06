@@ -17,7 +17,10 @@ export default function Shop() {
         Shop
       </p>
       <div className="max-w-screen-xl w-full mx-auto">
-        <div className="flex flex-wrap w-full gap-8 justify-center sm:justify-start">
+        <div
+          className="flex flex-wrap w-full gap-8 justify-center sm:justify-start"
+          data-aos="zoom-in-up"
+        >
           {shoes?.map((people, index) => (
             <ProductCard key={index} people={people} />
           ))}

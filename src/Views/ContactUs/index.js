@@ -37,7 +37,7 @@ export default function ContactUs() {
       >
         Ask a question
       </p>
-      <div className="flex  sm:px-0 flex-col gap-4">
+      <div className="flex  sm:px-0 flex-col gap-4" data-aos="fade-left">
         <input
           className="border border-[#00a3ff] p-4 h-[3rem] bg-user-card2 outline-none rounded-md w-full sm:w-[25rem]"
           placeholder="Name"

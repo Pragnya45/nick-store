@@ -22,7 +22,7 @@ function Shop() {
     <div className="flex flex-col items-center py-8 px-[4%] mt-8 relative h-fit post_swiper_container overflow-hidden w-full gap-2">
       <p
         className={`text-color-${theme} text-center text-[30px] font-bold`}
-        data-aos="fade-right"
+        data-aos="fade-left"
       >
         Collection
       </p>

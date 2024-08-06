@@ -8,6 +8,7 @@ export function ProductCard({ people }) {
 
   return (
     <div
+      data-aos="fade-left"
       onClick={() => navigate(`/shop/${people?.id}`)}
       className="my-8 h-[20rem] sm:h-[28rem] w-[15rem] sm:w-[18rem] overflow-hidden cursor-pointer rounded-xl   bg-[#D9D9D920] shadow-shadow-1 transition-all duration-200 hover:-translate-y-1 "
     >
